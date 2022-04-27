@@ -1,21 +1,15 @@
 import React from 'react';
-import { Usefetch } from './useFetch';
 
-const Home = () => {
-    Usefetch();
+const Home = (props) => {
     return (
-        <div>
+        <ul>
             <div>
-                <form action="">
-                    <h1>Search currency</h1>
-                    <input type="search" name="" id="" />
-                </form>
+                {props.name}    
             </div>
             <div>
-                <header></header>
-                <div></div>
+                <img src="" alt={props.name} />
             </div>
-        </div>
+       </ul>
     );
 }
 
