@@ -21,8 +21,6 @@ const App = () => {
         setSearch(event.target.value);
         
     }
-
-    console.log(Data);
     return (
         <div>
             <div>
@@ -33,7 +31,9 @@ const App = () => {
             </div>
             {FilterSearch.map(coin => {
                 return(
-                <Home key={coin.id} name={coin.name} />
+                <Home key={coin.id} name={coin.name} symbol={coin.symbol} imgurl={coin.image} 
+                currentPrice={coin.current_price} pricechangePercentage={coin.price_change_percentage_24h}
+                priceChange={coin.price_change_24h}/>
                 )
             })}
         </div>
