@@ -23,19 +23,21 @@ const App = () => {
     }
     return (
         <div>
-            <div>
+            <header className='d-flex justify-content-center'>
                 <form action="">
                     <h1>Search currency</h1>
-                    <input type="search" name="" id="" onChange={changing}/>
+                    <input  type="search" name="" id="" onChange={changing}/>
                 </form>
+            </header>
+            <div className='coin'>
+                {FilterSearch.map(coin => {
+                    return(
+                    <Home key={coin.id} name={coin.name} symbol={coin.symbol} imgurl={coin.image} 
+                    currentPrice={coin.current_price} pricechangePercentage={coin.price_change_percentage_24h}
+                    priceChange={coin.price_change_24h} marketCap={coin.market_cap}/>
+                    )
+                })}
             </div>
-            {FilterSearch.map(coin => {
-                return(
-                <Home key={coin.id} name={coin.name} symbol={coin.symbol} imgurl={coin.image} 
-                currentPrice={coin.current_price} pricechangePercentage={coin.price_change_percentage_24h}
-                priceChange={coin.price_change_24h}/>
-                )
-            })}
         </div>
     );
 }
