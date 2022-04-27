@@ -1,12 +1,15 @@
 header {
   position: fixed;
   background-color: #f9f9f9;
-  width: 100vw;
-  top: 0;
+  width: 100%;
+  padding: 3vh 0;
+  top: 0px;
+  left: 0;
+  right: 0;
 }
 
 .coin {
-  margin-top: 13vh;
+  margin-top: 18vh;
 }
 
 body {
@@ -18,6 +21,8 @@ body {
           box-shadow: 0 0 20px 10px #d8d3d3;
   margin: 5vh 5vw;
   border-radius: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .m {
