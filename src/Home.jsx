@@ -1,6 +1,8 @@
 import React from 'react';
+import { Usefetch } from './useFetch';
 
 const Home = () => {
+    Usefetch();
     return (
         <div>
             <div>
@@ -10,6 +12,7 @@ const Home = () => {
                 </form>
             </div>
             <div>
+                <header></header>
                 <div></div>
             </div>
         </div>
