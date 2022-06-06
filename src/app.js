@@ -1,6 +1,6 @@
 import {useState , useEffect} from 'react';
 import React from 'react';
-import Home from './Home';
+import Card from './Card';
 import axios from 'axios';
 
 const App = () => {
@@ -32,7 +32,7 @@ const App = () => {
             <div className='coin'>
                 {FilterSearch.map(coin => {
                     return(
-                    <Home key={coin.id} name={coin.name} symbol={coin.symbol} imgurl={coin.image} 
+                    <Card key={coin.id} name={coin.name} symbol={coin.symbol} imgurl={coin.image} 
                     currentPrice={coin.current_price} pricechangePercentage={coin.price_change_percentage_24h}
                     priceChange={coin.price_change_24h} marketCap={coin.market_cap}/>
                     )

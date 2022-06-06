@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = (props) => {
+const Card = (props) => {
     return (
         <ul className='list row'>
             <div className='m col m-2'>
@@ -28,4 +28,4 @@ const Home = (props) => {
     );
 }
 
-export default Home;
+export default Card;
