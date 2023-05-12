@@ -1,4 +1,5 @@
 ## Currency-app
+Shows cryptocurrencies price
 https://melodic-salamander-aa09ee.netlify.app/
 
 
