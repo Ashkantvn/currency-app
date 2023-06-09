@@ -10,17 +10,32 @@ header {
 
 .coin {
   margin-top: 9em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 1em;
+  width: 90dvw;
+  margin: 12em auto 0;
+}
+@media screen and (max-width: 768px) {
+  .coin {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .coin {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 body {
   background-color: #f9f9f9;
 }
 
-.list {
+.custom-card {
   box-shadow: 0 0 20px 10px rgb(216, 211, 211);
-  margin: 5vh 5vw;
   border-radius: 20px;
-  flex-wrap: wrap;
 }
 
 .m {
@@ -42,8 +57,6 @@ body {
 }
 
 img {
-  display: grid;
-  align-items: center;
   height: 2em;
   width: 2em;
 }
