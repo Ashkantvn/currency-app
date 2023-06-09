@@ -4,7 +4,7 @@ import Card from './parts/Card';
 import {useFetch} from './hooks/useFetch';
 const App = () => {
     const Data = useFetch(); 
-    ///////////////////////////searching    
+    ///searching    
     const [Search, setSearch] = useState("");
     const FilterSearch =  Data.filter(coin => coin.name.toLowerCase().includes(Search.toLowerCase()))
 
@@ -12,12 +12,10 @@ const App = () => {
         setSearch(event.target.value);
         
     }
-    //////////////////////mapping data
+    ////mapping data
     const mappingData = FilterSearch.map(coin => {
         return(
-        <Card key={coin.id} name={coin.name} symbol={coin.symbol} imgurl={coin.image} 
-        currentPrice={coin.current_price} pricechangePercentage={coin.price_change_percentage_24h}
-        priceChange={coin.price_change_24h} marketCap={coin.market_cap}/>
+        <Card key={coin.id}  coin={coin}/>
         )
     })
     return (

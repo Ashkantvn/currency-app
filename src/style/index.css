@@ -9,7 +9,7 @@ header {
 }
 
 .coin {
-  margin-top: 18vh;
+  margin-top: 9em;
 }
 
 body {
@@ -17,22 +17,16 @@ body {
 }
 
 .list {
-  -webkit-box-shadow: 0 0 20px 10px #d8d3d3;
-          box-shadow: 0 0 20px 10px #d8d3d3;
+  box-shadow: 0 0 20px 10px rgb(216, 211, 211);
   margin: 5vh 5vw;
   border-radius: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .m {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .m h4 {
   font-size: small;
 }
@@ -48,11 +42,8 @@ body {
 }
 
 img {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 2em;
   width: 2em;
 }
@@ -61,5 +52,4 @@ input {
   border-radius: 15px;
   width: 100%;
   padding: 5px 10px;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
