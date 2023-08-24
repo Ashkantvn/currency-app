@@ -1,35 +1,28 @@
-import {useState} from 'react';
-import React from 'react';
+import React, { useContext } from 'react';
 import Card from './parts/Card';
-import {useFetch} from './hooks/useFetch';
-const App = () => {
-    const Data = useFetch(); 
-    ///searching    
-    const [Search, setSearch] = useState("");
-    const FilterSearch =  Data.filter(coin => coin.name.toLowerCase().includes(Search.toLowerCase()))
+import { useFetch } from './hooks/useFetch';
+import Header from './parts/Header';
+import { currencyAppContext } from './hooks/useCurrencyContext';
 
-    function changing(event) {
-        setSearch(event.target.value);
-        
-    }
-    ////mapping data
-    const mappingData = FilterSearch.map(coin => {
-        return(
-        <Card key={coin.id}  coin={coin}/>
+
+const App = () => {
+    const fetchData = useFetch();
+    const { Search } = useContext(currencyAppContext);
+
+    //mapping fetchData
+    const FilterSearch = fetchData.filter(coin => coin.name.toLowerCase().includes(Search.toLowerCase()))
+    const mappingfetchData = FilterSearch.map(coin => {
+        return (
+            <Card key={coin.id} coin={coin} />
         )
     })
     return (
-        <div>
-            <header className='d-flex justify-content-center'>
-                <form action="">
-                    <h1>Search currency</h1>
-                    <input  type="search" name="" id="" onChange={changing}/>
-                </form>
-            </header>
+        <main>
+            <Header />
             <div className='coin'>
-                {mappingData}
+                {mappingfetchData}
             </div>
-        </div>
+        </main>
     );
 }
 
