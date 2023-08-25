@@ -6,6 +6,7 @@ header{
     top: 0px;
     left: 0;
     right:0;
+    transition: 300ms;
 }
 .coin{
     margin-top: 9em;
@@ -65,4 +66,7 @@ input{
     padding: 0.5em 1em ;
     background:none;
     outline: none;
+}
+.top-h{
+    top: -50%;
 }
