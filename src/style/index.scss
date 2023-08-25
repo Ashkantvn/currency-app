@@ -8,6 +8,7 @@ header{
     left: 0;
     right:0;
     transition: 90ms;
+    border-bottom:1px solid  #121212;
 }
 input{
     transition: 300ms;
@@ -26,15 +27,19 @@ input{
 .top-h{
     top: -25%;
 }
+.brand{
+    font-size: smaller;
+    width: 20%;
+    text-align: center;
+}
 //main element styles
 .coin{
-    margin-top: 9em;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
     gap: 1em;
     width: 90dvw;
-    margin:12em auto 0;
+    margin:8em auto 0;
     @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
@@ -43,7 +48,7 @@ input{
         grid-template-columns: repeat(3,1fr);
     }
 }
-///global style
+///body style
 body{
     background-color: #f9f9f9;
 }
