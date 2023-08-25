@@ -1,34 +1,37 @@
-import React, { useContext } from 'react';
-import Card from './parts/Card';
-import { useFetch } from './hooks/useFetch';
+import React, { useContext, useRef } from 'react';
 import Header from './parts/Header';
-import { currencyAppContext } from './hooks/useCurrencyContext';
 import {AiOutlineArrowUp} from "react-icons/ai"
+import Main from './parts/Main';
+import { currencyAppContext } from './hooks/useCurrencyContext';
 
 const App = () => {
-    const fetchData = useFetch();
-    const { Search } = useContext(currencyAppContext);
-
-    //mapping fetchData
-    const FilterSearch = fetchData.filter(coin => coin.name.toLowerCase().includes(Search.toLowerCase()))
-    const mappingfetchData = FilterSearch.map(coin => {
-        return (
-            <Card key={coin.id} coin={coin} />
-        )
-    })
+    const { setishidden} = useContext(currencyAppContext);
+    const timer = useRef(0);
 
     ///scroll to the top of the page
     const topArrowButtonClickHandler = ()=>{
         window.scrollTo(0,0);
     }
+
+    ///scroll event for body element 
+    window.addEventListener("scroll",()=>{
+      setishidden((ishidden)=>ishidden=true);
+      if (timer.current!==0){
+          clearTimeout(timer.current);
+      }
+      timer.current = setTimeout(()=>{
+          setishidden((ishidden)=>ishidden=false);
+      },300);
+    })
+  
+    
+    
     return (
-        <main>
+        <div>
             <Header />
-            <div className='coin'>
-                {mappingfetchData}
-            </div>
+            <Main/>
             <button className='top-link' onClick={topArrowButtonClickHandler}><AiOutlineArrowUp/></button>
-        </main>
+        </div>
     );
 }
 
