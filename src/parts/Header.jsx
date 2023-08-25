@@ -14,7 +14,7 @@ export default function Header() {
         <header  className={`${display} d-flex justify-content-between px-4 align-items-center`}>
             <h1 className='brand'>Currency-app</h1>
             <form action="">
-                <input type="search" name="" id="" onChange={searchDataHandler} placeholder='Search currency'/>
+                <input type="search" size="15" name="" id="" onChange={searchDataHandler} placeholder='Search currency'/>
             </form>
         </header>
     )
