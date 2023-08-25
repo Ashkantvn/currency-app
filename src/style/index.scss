@@ -1,3 +1,4 @@
+//header styles
 header{
     position: fixed;
     background-color: #f9f9f9;
@@ -8,6 +9,24 @@ header{
     right:0;
     transition: 90ms;
 }
+input{
+    transition: 300ms;
+    border : none;
+    border-bottom: 1px solid #121212;
+    border-radius: 15px;
+    width :100%;
+    padding: 5px 10px;
+    &:focus{
+        border: none;
+        border-bottom: 1px solid #121212;
+        border-radius: 7px;
+        outline :none;
+    }
+}
+.top-h{
+    top: -25%;
+}
+//main element styles
 .coin{
     margin-top: 9em;
     display: grid;
@@ -24,14 +43,16 @@ header{
         grid-template-columns: repeat(3,1fr);
     }
 }
+///global style
 body{
     background-color: #f9f9f9;
 }
+///card style
 .custom-card{
     box-shadow: 0 0 20px 10px rgb(216, 211, 211);
     border-radius: 20px;
 }
-.m{
+.card-informations{
     display: grid;
     align-items: center;
     h4{
@@ -50,11 +71,7 @@ img{
     height: 2em;
     width: 2em;
 }
-input{
-    border-radius: 15px;
-    width :100%;
-    padding: 5px 10px;
-}
+///link style
 .top-link{
     position: fixed;
     bottom: 1em;
@@ -66,7 +83,4 @@ input{
     padding: 0.5em 1em ;
     background:none;
     outline: none;
-}
-.top-h{
-    top: -25%;
 }

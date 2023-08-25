@@ -13,8 +13,7 @@ export default function Header() {
     return (
         <header  className={`${display} d-flex justify-content-center`}>
             <form action="">
-                <h1>Search currency</h1>
-                <input type="search" name="" id="" onChange={searchDataHandler} />
+                <input type="search" name="" id="" onChange={searchDataHandler} placeholder='Search currency'/>
             </form>
         </header>
     )

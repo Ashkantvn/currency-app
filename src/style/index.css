@@ -9,6 +9,25 @@ header {
   transition: 90ms;
 }
 
+input {
+  transition: 300ms;
+  border: none;
+  border-bottom: 1px solid #121212;
+  border-radius: 15px;
+  width: 100%;
+  padding: 5px 10px;
+}
+input:focus {
+  border: none;
+  border-bottom: 1px solid #121212;
+  border-radius: 7px;
+  outline: none;
+}
+
+.top-h {
+  top: -25%;
+}
+
 .coin {
   margin-top: 9em;
   display: grid;
@@ -39,11 +58,11 @@ body {
   border-radius: 20px;
 }
 
-.m {
+.card-informations {
   display: grid;
   align-items: center;
 }
-.m h4 {
+.card-informations h4 {
   font-size: small;
 }
 
@@ -62,12 +81,6 @@ img {
   width: 2em;
 }
 
-input {
-  border-radius: 15px;
-  width: 100%;
-  padding: 5px 10px;
-}
-
 .top-link {
   position: fixed;
   bottom: 1em;
@@ -79,8 +92,4 @@ input {
   padding: 0.5em 1em;
   background: none;
   outline: none;
-}
-
-.top-h {
-  top: -25%;
 }/*# sourceMappingURL=index.css.map */
