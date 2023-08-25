@@ -7,11 +7,13 @@ export const currencyAppContext = createContext();
 
 function Provider({ children }) {
     const [Search, setSearch] = useState("");
-
+    const [ishidden, setishidden] = useState(false);
     return (
         <currencyAppContext.Provider value={{
             Search,
-            setSearch
+            setSearch,
+            ishidden,
+            setishidden
         }}>
             {children}
         </currencyAppContext.Provider>
