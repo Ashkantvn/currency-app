@@ -36,6 +36,11 @@ input:focus {
   text-align: center;
 }
 
+.nightmode-button {
+  background: none;
+  border: none;
+}
+
 .coin {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

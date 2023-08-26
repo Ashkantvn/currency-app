@@ -1,3 +1,6 @@
+//global styles
+
+
 //header styles
 header{
     position: fixed;
@@ -32,6 +35,10 @@ input{
     margin: 0;
     font-size: smaller;
     text-align: center;
+}
+.nightmode-button{
+    background:none;
+    border: none;
 }
 //main element styles
 .coin{

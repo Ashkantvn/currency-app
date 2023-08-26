@@ -23,7 +23,7 @@ export default function Header() {
             <form action="">
                 <input type="search" size="15" name="" id="" onChange={searchDataHandler} placeholder='Search currency' />
             </form>
-            <button onClick={nightModeClickHandler} >
+            <button onClick={nightModeClickHandler} className='nightmode-button'>
                 {isNightMode ? <BsMoonFill /> : <BsSunFill />}
             </button>
         </header>
