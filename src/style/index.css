@@ -30,8 +30,9 @@ input:focus {
 }
 
 .brand {
+  width: 10%;
+  margin: 0;
   font-size: smaller;
-  width: 20%;
   text-align: center;
 }
 
