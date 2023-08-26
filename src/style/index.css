@@ -1,6 +1,5 @@
 header {
   position: fixed;
-  background-color: #f9f9f9;
   width: 100%;
   padding: 3vh 0;
   top: 0px;
@@ -11,6 +10,7 @@ header {
 }
 
 input {
+  background: #f1f0f0;
   transition: 300ms;
   border: none;
   border-bottom: 1px solid #121212;
@@ -61,12 +61,7 @@ input:focus {
   }
 }
 
-body {
-  background-color: #f9f9f9;
-}
-
-.custom-card {
-  box-shadow: 0 0 20px 10px rgb(216, 211, 211);
+.box-card {
   border-radius: 20px;
 }
 
@@ -79,12 +74,12 @@ body {
 }
 
 .green {
-  color: #025f21;
+  color: #00aa39;
   font-weight: bold;
 }
 
 .red {
-  color: #501202;
+  color: #f63302;
   font-weight: bold;
 }
 
@@ -97,9 +92,7 @@ img {
   position: fixed;
   bottom: 1em;
   left: 1em;
-  border: 1px solid #121212;
   text-decoration: none;
-  color: #121212;
   border-radius: 15px;
   padding: 0.5em 1em;
   background: none;

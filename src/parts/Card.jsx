@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({ coin }) => {
     return (
-        <ul className='custom-card p-2 text-center'>
+        <ul className='box-card p-2 text-center'>
             <div className='card-informations  m-2 '>
                 <img className='mx-auto' src={coin.image} alt={coin.name} />
             </div>

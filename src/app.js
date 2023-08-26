@@ -3,9 +3,10 @@ import Header from './parts/Header';
 import {AiOutlineArrowUp} from "react-icons/ai"
 import Main from './parts/Main';
 import { currencyAppContext } from './hooks/useCurrencyContext';
+import GlobalStyle from './style/styledComponents/globalStyle';
 
 const App = () => {
-    const { setishidden} = useContext(currencyAppContext);
+    const { setishidden , isNightMode} = useContext(currencyAppContext);
     const timer = useRef(0);
 
     ///scroll to the top of the page
@@ -27,13 +28,15 @@ const App = () => {
     
     
     return (
+        
         <div>
+            <GlobalStyle isNightMode={isNightMode}/>
             <Header />
             <Main/>
             <button className='top-link' onClick={topArrowButtonClickHandler}><AiOutlineArrowUp/></button>
         </div>
     );
-}
+    }
 
 export default App;
 
