@@ -10,6 +10,12 @@ export default function Header() {
     function searchDataHandler(event) {
         setSearch(event.target.value);
     }
+    
+
+    ///submit handler
+    function submitHandler(event){
+        event.preventDefault();
+    }
 
 
     ///night mode event handler
@@ -20,7 +26,7 @@ export default function Header() {
     return (
         <header className={`${display} d-flex justify-content-between px-4 align-items-center`}>
             <h1 className='brand'>Currency-app</h1>
-            <form action="">
+            <form action="" onSubmit={submitHandler}>
                 <input type="search" size="15" name="" id="" onChange={searchDataHandler} placeholder='Search currency' />
             </form>
             <button onClick={nightModeClickHandler} className='nightmode-button'>
