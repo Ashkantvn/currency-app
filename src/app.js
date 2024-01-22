@@ -7,7 +7,7 @@ import GlobalStyle from './style/styledComponents/globalStyle';
 
 const App = () => {
     const { setishidden , isNightMode} = useContext(currencyAppContext);
-    const timer = useRef(0);
+    const timer = useRef(0);// settimeout functions ID
 
     ///scroll to the top of the page
     const topArrowButtonClickHandler = ()=>{
@@ -17,7 +17,7 @@ const App = () => {
     ///scroll event for body element 
     window.addEventListener("scroll",()=>{
       setishidden((ishidden)=>ishidden=true);
-      if (timer.current!==0){
+      if (timer.current!==0){/// will stop showing the header if client is scrolling
           clearTimeout(timer.current);
       }
       timer.current = setTimeout(()=>{
