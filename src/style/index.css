@@ -88,13 +88,25 @@ img {
   width: 2em;
 }
 
-.top-link {
+footer {
+  width: 100%;
+  transition: 90ms;
+  padding: 0.5em 0;
+  display: flex;
+  background-color: #f1f0f0;
   position: fixed;
-  bottom: 1em;
-  left: 1em;
+  justify-content: space-around;
+  bottom: 0;
+}
+
+.fixed-buttons {
   text-decoration: none;
+  border: none;
   border-radius: 15px;
-  padding: 0.5em 1em;
   background: none;
   outline: none;
+}
+
+.bottom-f {
+  bottom: -10%;
 }/*# sourceMappingURL=index.css.map */

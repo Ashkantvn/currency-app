@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 
 
 const GlobalStyle = createGlobalStyle`
-    body,header{
+    body,header,footer{
         background-color: ${(props)=>props.isNightMode?"#1a2a3c":"#f9f9f9"};
         color: ${(props)=>props.isNightMode?"#f9f9f9":"#1a2a3c"};
     }
