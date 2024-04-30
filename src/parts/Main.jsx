@@ -8,8 +8,8 @@ export default function Main() {
     const { Search } = useContext(currencyAppContext);
     //mapping fetchData
     const mapper = ()=>{
-        if( typeof fetchData === "string" || fetchData.length === 0){return fetchData;}
-        const FilterSearch = fetchData.data.filter(coin => coin.name.toLowerCase().includes(Search.toLowerCase()));
+        if( typeof fetchData === "string"){return fetchData;}
+        const FilterSearch = fetchData.filter(coin => coin.name.toLowerCase().includes(Search.toLowerCase()));
         const mappingfetchData = FilterSearch.map(coin => {
             return (
                 <Card key={coin.id} coin={coin} />
