@@ -1,15 +1,15 @@
 # Overview
-This project focuses on designing a cryptocurrency tracking application that allows users to explore digital assets and monitor market activity in one place.
+This project focuses on designing a cryptocurrency market dashboard that allows users to explore digital assets, understand market trends, and analyze cryptocurrency data in one place.
 
-The application brings together essential cryptocurrency information, including live prices, market trends, and detailed coin information. It helps users follow market movements and keep track of their preferred cryptocurrencies through a simple and organized interface.
+The platform brings together essential market information, including cryptocurrency prices, market trends, historical data, and detailed coin information. It presents this data through a clear and organized interface, helping users explore market conditions, compare digital assets, and better understand market performance.
 
-The goal is to provide a clear and intuitive experience for both beginners and experienced users, making cryptocurrency market information easier to access and understand.
+The goal is to make cryptocurrency market data more accessible and understandable, providing both beginners and casual crypto users with an intuitive environment to explore and analyze market information.
 
 # Problem Statement
-The cryptocurrency market is constantly changing, with thousands of digital assets and large amounts of information available across different platforms.
+The cryptocurrency market contains thousands of digital assets and a large volume of constantly changing information. Finding, understanding, and comparing relevant market data can be challenging, especially when information is scattered across multiple platforms.
 
-Users may find it challenging to track cryptocurrency prices, compare assets, follow market changes, and find the information they need without navigating multiple pages or platforms.
+Users may struggle to get a clear overview of market conditions, analyze cryptocurrency performance, compare different assets, and interpret various market indicators.
 
-For beginners, understanding market data and navigating complex interfaces can also be overwhelming.
+For beginners and casual users, the complexity of financial data and unfamiliar terminology can make understanding the cryptocurrency market even more difficult.
 
-This project addresses these challenges by exploring how cryptocurrency information can be presented in a more organized, accessible, and user-friendly way.
+This project addresses these challenges by exploring how cryptocurrency market data can be collected, organized, and presented through an intuitive dashboard that simplifies data exploration, comparison, and market analysis.
