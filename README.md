@@ -125,7 +125,15 @@ Help users quickly find and explore cryptocurrencies.
 - Sort by price.
 - Sort by 24h price change.
 
----
+## Platform & Deployment
+
+### Platform
+The project will be developed exclusively as a web application, accessible through web browsers on desktop, tablet, and mobile devices.
+
+The interface will be responsive to ensure a consistent user experience across different screen sizes.
+
+### Platform Scope
+The project focuses exclusively on web delivery. Native Android and iOS applications are not included in the project scope.
 
 # Technical Considerations
 
