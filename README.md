@@ -53,3 +53,88 @@ Individuals who have a general interest in cryptocurrencies and enjoy exploring 
 - Enjoy exploring different digital assets.
 - Interested in market trends and cryptocurrency performance.
 - Want convenient access to a variety of market information.
+
+# MVP Features
+
+## 1. Market Overview
+Provide users with a general overview of the cryptocurrency market.
+
+- Total Cryptocurrency Market Capitalization
+- Total 24h Trading Volume
+- Bitcoin Dominance
+- Ethereum Dominance
+- Market Cap Change (24h)
+- Top Gainers & Losers
+- Overall Market Trends
+
+## 2. Cryptocurrency Listing
+Display a comprehensive list of cryptocurrencies with essential market information.
+
+- Cryptocurrency Name and Logo
+- Coin Symbol
+- Current Price
+- Market Capitalization
+- 24h Trading Volume
+- 24h Price Change (%)
+- Market Cap Rank
+- Sort cryptocurrencies by price, market cap, and price change.
+
+## 3. Coin Details
+Provide a dedicated page for each cryptocurrency, allowing users to explore detailed information.
+
+- Current Price
+- Market Capitalization
+- Trading Volume
+- Circulating Supply
+- Total Supply
+- Maximum Supply
+- All-Time High (ATH)
+- All-Time Low (ATL)
+- Price Change Statistics
+- Cryptocurrency Description
+
+## 4. Historical Price Charts
+Allow users to explore historical cryptocurrency price movements and market performance.
+
+- Interactive Price Charts
+- Historical Price Data
+- Historical Market Capitalization
+- Historical Trading Volume
+- Multiple Time Ranges:
+  - 1 Day
+  - 7 Days
+  - 30 Days
+  - 90 Days
+  - 1 Year
+
+## 5. Watchlist
+Allow users to save and monitor their favorite cryptocurrencies.
+
+- Add cryptocurrencies to Watchlist.
+- Remove cryptocurrencies from Watchlist.
+- View saved cryptocurrencies in one place.
+- Display current prices and price changes.
+
+## 6. Search & Filter
+Help users quickly find and explore cryptocurrencies.
+
+- Search by cryptocurrency name.
+- Search by coin symbol.
+- Filter cryptocurrencies by category.
+- Sort by market capitalization.
+- Sort by price.
+- Sort by 24h price change.
+
+## Platform & Deployment
+
+### Platform
+The project will be developed exclusively as a web application, accessible through web browsers on desktop, tablet, and mobile devices.
+
+The interface will be responsive to ensure a consistent user experience across different screen sizes.
+
+### Platform Scope
+The project focuses exclusively on web delivery. Native Android and iOS applications are not included in the project scope.
+
+# Technical Considerations
+
+- **Market Data API:** CoinGecko API.
