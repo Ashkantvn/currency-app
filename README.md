@@ -135,6 +135,24 @@ The interface will be responsive to ensure a consistent user experience across d
 ### Platform Scope
 The project focuses exclusively on web delivery. Native Android and iOS applications are not included in the project scope.
 
-# Technical Considerations
+## Technical Stack
+
+### Website Languages
+- English
+- Farsi
+
+### Programming Languages
+- Python
+- JavaScript
+
+### Main Frameworks
+- Django
+- Bootstrap
+
+### Database & Storage
+- PostgreSQL
+- Redis
+
+### Technical Considerations
 
 - **Market Data API:** CoinGecko API.
