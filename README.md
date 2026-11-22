@@ -156,3 +156,4 @@ The project focuses exclusively on web delivery. Native Android and iOS applicat
 ### Technical Considerations
 
 - **Market Data API:** CoinGecko API.
+- **Containerization:** Docker.
