@@ -1,1 +1,97 @@
-.venv
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# ==============================
+# Virtual Environments
+# ==============================
+env/
+venv/
+.venv/
+ENV/
+.env_venv/
+
+# ==============================
+# Environment Variables / Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Django
+# ==============================
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Media files (user uploads)
+media/
+
+# Static files collected by collectstatic
+staticfiles/
+
+# ==============================
+# Testing / Coverage
+# ==============================
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# ==============================
+# Type Checking / Linting
+# ==============================
+.mypy_cache/
+.dmypy.json
+.pyre/
+.ruff_cache/
+
+# ==============================
+# Build / Distribution
+# ==============================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# IDEs / Editors
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================
+# Operating System
+# ==============================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Temporary Files
+# ==============================
+*.tmp
+*.bak
+*.orig
+
+# ==============================
+# Migration Files
+# ==============================
+migrations/
+migrations/*.py
+migrations/__init__.py
